@@ -50,12 +50,12 @@ st.title("Fly'IT Matcher")
 existing_files = list_files_in_directory()
 
 
-uploaded_files = st.file_uploader("Ajouter un nouveau CV", accept_multiple_files=False, type=['pdf', 'docx'])
-# Save uploaded files
-if uploaded_files:
-    for uploaded_file in uploaded_files:
-        save_uploaded_file(uploaded_file)
-        existing_files.append(uploaded_file.name)  # Add the new file to the existing files list
+# uploaded_files = st.file_uploader("Ajouter un nouveau CV", accept_multiple_files=False, type=['pdf', 'docx'])
+# # Save uploaded files
+# if uploaded_files:
+#     for uploaded_file in uploaded_files:
+#         save_uploaded_file(uploaded_file)
+#         existing_files.append(uploaded_file.name)  # Add the new file to the existing files list
 
 # st.subheader('CVs disponibles')
 resume_selected = st.selectbox('Sélectioner un CV pour la comparaison:', existing_files)
