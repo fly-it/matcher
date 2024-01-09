@@ -29,6 +29,8 @@ try:
 except LookupError:
     nltk.download('stopwords')
 
+nltk.download('punkt')
+
 # Try to load wordnet, download if not present
 try:
     wordnet.ensure_loaded()
