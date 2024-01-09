@@ -100,3 +100,5 @@ if st.button('Comparer'):
         result_placeholder.subheader(f"Le score de similarité : {similarity}%")
     else:
         st.warning("Veuillez sélectionner un CV et mettre une description d'une mission pour comparer!")
+
+
